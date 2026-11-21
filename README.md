@@ -1,6 +1,6 @@
 # Codage de Huffman : implémentation, analyse et compression d'images
 
-Ce dépôt est un fork de [Reference Huffman coding](https://github.com/nayuki/Reference-Huffman-coding) de Project Nayuki. Il constitue la partie pratique d'un exposé sur le codage de Huffman.
+Ce dépôt est le resultat d'un projet d'exposé de science de l'information sur le theme "CODAGE DE SOURCE: Codes prefixes, Kraft-McMillan et Huffman.  Ce travail s'appuie sur le repo [Reference Huffman coding](https://github.com/nayuki/Reference-Huffman-coding) du Project Nayuki.
 
 Le travail ajouté à l'original porte sur la version Python :
 
@@ -30,8 +30,6 @@ Dans `python/huffmancoding.py`, la méthode `CodeTree.__str__` ajoutait « 0 » 
 ├── README.md                      ce fichier
 ├── README-upstream.markdown       README d'origine (Project Nayuki)
 ├── LICENSE                        licence MIT
-├── java/                          version Java d'origine (non modifiée)
-├── cpp/                           version C++ d'origine (non modifiée)
 └── python/
     ├── huffmancoding.py           classes de base (Nayuki, une correction)
     ├── huffman-compress.py        compression, Huffman statique (Nayuki)
@@ -126,9 +124,6 @@ python3 -m unittest discover -s tests -v
 
 Les tests vérifient que la décompression redonne exactement le fichier d'origine (Huffman statique et adaptatif, fichier vide compris), que l'affichage de l'arbre est correct, et que les trois méthodes de compression d'images sont sans perte.
 
-## Java et C++
-
-Les versions Java et C++ sont celles du projet d'origine, sans modification. Voir la page de Nayuki pour leur description.
 
 ## Références
 
